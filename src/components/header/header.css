@@ -1,0 +1,237 @@
+.header-container{
+    width: 100%;
+    height: 13vh;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: opacity(1) ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    position: sticky;
+    top: 0;
+}
+.header-wrapper{
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+    width: 30%;
+    height: 100%;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.Nav{
+    width: 50%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.nav-bar{
+    width: 58%;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    color: rgb(6, 6, 8);
+    font-weight: 400;
+    cursor: pointer;
+    transform: scale(1);
+    /* background-color: red; */
+    /* line-height: 24px; */
+
+}
+.nav-bar > li > a:hover{
+    transition: all ease-in-out 350ms;
+    transform: scale(1.04);
+   color: rgb(124,59,237);
+}
+
+.nav-bar > li > a{
+  text-decoration: none;
+  color: black;
+  
+}
+
+
+.hire-me{
+    width: 13%;
+    height: 55%;
+    background-color: rgba(250, 235, 215, 0);
+    border-radius: 9px;
+    text-align: center;
+   padding-top: 8px;
+   margin-right: 30px;
+   margin-left: 30px;
+   border: 1px solid rgb(124,59,237);
+   transform: scale(1);
+   color: rgb(124,59,237) ;
+   font-size: 13px;
+   font-weight: 300;
+}
+.hire-me:hover{
+    transition: all ease-in-out;
+    background-color: rgb(124,59,237);
+    cursor: pointer;
+    color: white;
+
+}
+.toggleswitch{
+    width: 7%;
+    height: auto;
+    font-size: 20px;
+     padding-top: 8px;
+     padding-left: 11px;
+     background-color: rgba(255, 0, 0, 0);
+     border-radius: 7px;
+     display: block;
+     justify-content: center;
+     align-items: center;
+     transform: scale(1);
+    
+}
+.toggleswitch:hover{
+transition: all ease-in-out 350ms;
+transform: scale(1.03);
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+ background-color: rgb(245, 225, 247);
+}
+.burger{
+    width: 20%;
+    height: auto;
+    font-size: 23px;
+     padding-top: 8px; 
+     display: none;
+}
+
+@media only screen and (max-width:640px) {
+    .header-container{
+    width: 100%;
+    height: 13vh;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: opacity(1) ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    position: sticky;
+    top: 0;
+}
+.header-wrapper{
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+    width: 73%;
+    height: 100%;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 13px;
+    padding-left: 10px;
+}
+.Nav{
+    width: 50%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.nav-bar{
+    width: 58%;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    color: rgb(6, 6, 8);
+    font-weight: 400;
+    cursor: pointer;
+    transform: scale(1);
+    /* background-color: red; */
+    /* line-height: 24px; */
+    display: none;
+    
+
+}
+
+.nav-bar > li:hover{
+    transition: all ease-in-out 350ms;
+    transform: scale(1.04);
+   color: rgb(124,59,237);
+}
+.nav-bar > li:first-child{
+     color: rgb(124,59,237);
+}
+
+.hire-me{
+    width: 68%;
+    height: 65%;
+    /* background-color: rgba(223, 131, 11, 0.979); */
+    border-radius: 9px;
+    text-align: center;
+   padding-top: 8px;
+   margin-right: 30px;
+   margin-left: 30px;
+   border: 1px solid rgb(124,59,237);
+   transform: scale(1);
+   color: rgb(124,59,237) ;
+   font-size: 12px;
+   font-weight: 300;
+   display: none;
+}
+.hire-me:hover{
+    transition: all ease-in-out;
+    background-color: rgb(124,59,237);
+    cursor: pointer;
+    color: white;
+    display: none;
+
+}
+.toggleswitch{
+    width: 28%;
+    height: auto;
+    font-size: 20px;
+     padding-top: 8px;
+     /* padding-left: 5px; */
+     background-color: rgba(255, 0, 0, 0);
+     border-radius: 7px;
+     display: block;
+     justify-content: center;
+     align-items: center;
+        margin-left:25px;
+       
+     transform: scale(1);
+    
+}
+.toggleswitch:hover{
+transition: all ease-in-out 350ms;
+transform: scale(1.03);
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+ background-color: rgb(245, 225, 247);
+}
+.burger{
+    width: 30%;
+    /* background-color: green; */
+    height: auto;
+    font-size: 23px;
+     padding-top: 8px; 
+     display:block;
+     text-align: center;
+     margin-left:29px;
+}
+}
