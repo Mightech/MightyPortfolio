@@ -1600,6 +1600,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: var(--shadow-color) 0px 2px 8px 0px;
+     color: var(--text-color);
 }
 .send-a-message-title{
     width: 100%;
@@ -1873,6 +1874,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: var(--shadow-color) 0px 2px 8px 0px;
+    color: var(--text-color);
 }
 .send-a-message-title{
     width: 100%;
