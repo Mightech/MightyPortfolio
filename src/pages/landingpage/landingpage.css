@@ -169,8 +169,8 @@
 }
 .landing-wrapper{
     width: 100%;
-    height: 38rem;
-    background-color: rgb(59, 7, 7);
+    height: 39rem;
+    /* background-color: rgb(59, 7, 7); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,13 +178,15 @@
 }
 .landing-wrapper-wrapper{
     width: 90%;
-    height: 100%;
-    background-color: green;
+    height: 110%;
+    /* background-color: green; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 15px;
+    margin-bottom: 80px;
+    
 }
 .landing-title{
     width: 100%;
