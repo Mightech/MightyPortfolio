@@ -59,10 +59,10 @@ const Landingpage = () => {
             </div>
           </div>
           <div  className='landing-social-icons'>
-            <p className='github-icon'><SlSocialGithub /></p>
-             <p className='github-icon'><SlSocialLinkedin /></p>
-              <p className='github-icon'><SlSocialTwitter /></p>
-                <p className='github-icon'><TfiEmail /></p>
+           <a href=""><p className='github-icon'><SlSocialGithub /></p></a> 
+             <a href="https://www.linkedin.com/in/mighty-ndubuizu-50655830a/" target='_blank'><p className='github-icon'><SlSocialLinkedin /></p></a> 
+              <a href=""><p className='github-icon'><SlSocialTwitter /></p></a> 
+               <a href=""> <p className='github-icon'><TfiEmail /></p></a> 
           </div>
           <div  className='landing-down-arrow '>
             <p className='github-icon  '><VscArrowDown/></p>
