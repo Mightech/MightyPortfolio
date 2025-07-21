@@ -7,6 +7,7 @@ const Footer = () => {
    function ScrollToTop() {
      window.scrollTo({top:0, behavior:"smooth"})
    }
+
   return (
     <div className='footer-container'>
         <div className='footer-wrapper'>

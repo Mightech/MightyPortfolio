@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import "../landingpage/landingpage.css"
 import { SlSocialLinkedin, SlSocialGithub, SlSocialTwitter } from "react-icons/sl";
 import { TfiEmail } from "react-icons/tfi";
@@ -10,13 +10,20 @@ import AnimatedContent from '../AnimatedContent.jsx';
 import Myskill from './Myskill.jsx';
 import Myproject from './Myproject.jsx';
 import Getintouch from './Getintouch.jsx';
-import Footer from '../../components/footer/Footer.jsx';
-import Header from '../../components/header/Header.jsx';
+// import Footer from '../../components/footer/Footer.jsx';
+// import Header from '../../components/header/Header.jsx';
+
 
 
 
 
 const Landingpage = () => {
+
+     const workRef = useRef(null);
+
+  const scrollToWork = () => {
+    workRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
   
     <div className='landing-container'id='home'>
@@ -33,11 +40,11 @@ const Landingpage = () => {
   delay={0}
 >
       <div className='landing-wrapper'>
-           <Header/>
+           
       
         <div className='landing-wrapper-wrapper'>
        
-              
+          
           <div className='landing-title'>
             <h1 style={{fontFamily:"Poppins"}}>Hi, I'm Mighty Ndubuizu</h1>
           </div>
@@ -45,7 +52,7 @@ const Landingpage = () => {
             <h4 className='text-sub-title'>A passionate <j style={{color:"rgb(124,59,237)"}}>Frontend Developer</j> specializing in creating beautiful, responsive, and user-friendly web experiences with modern technologies.</h4>
           </div>
           <div  className='landing-buttons'>
-            <div className='view-work-btn'id='project'><h4>View My Work</h4></div>
+            <div className='view-work-btn'id='project'><h4  onClick={scrollToWork}>View My Work</h4></div>
             <div className='download-cv-btn'>
               <p className='download-icon'><TbArrowDownToArc /></p>
               <h4>Download CV</h4>
@@ -67,9 +74,9 @@ const Landingpage = () => {
       </AnimatedContent>
       < ><About /> </>
       <> <Myskill/></>
-      <><Myproject/></>
-      <><Getintouch/></>
-      <> <Footer/></>
+      <div ref={workRef}><Myproject/></div>
+      <div ref={workRef} ><Getintouch/></div>
+    
       
     </div>
     

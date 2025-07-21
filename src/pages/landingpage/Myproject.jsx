@@ -78,7 +78,7 @@ const Myproject = () => {
           threshold={0.1}
           delay={0.10}
         >
-    <div className='project-wrapper'id='project'>
+    <div className='project-wrapper'id='projectz'>
         <div className='project-wrapper-text-holder'>
              <div className='project-wrapper-text-holder-title'style={{fontFamily:"Poppins"}}><h1>My <j style={{color:"rgb(124,59,237)"}}>Projects</j></h1></div>
             <div className='project-wrapper-text-holder-subtitle'><h4>A selection of projects that demonstrate my skills in frontend development and UI design.</h4></div>
