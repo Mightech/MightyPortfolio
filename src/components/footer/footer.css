@@ -83,8 +83,10 @@
     
 
 }
-.footer-logo-text > li > a{
-    text-decoration: none;
+.footer-logo-text > li > a {
+      text-decoration: none;
+      text-decoration-color:var(--text-color) ;
+      color:var(--text-color);
 }
 .footer-wrapper-one-second{
     width: 35%;
@@ -214,6 +216,12 @@
     font-size: 14px;
     font-weight: 400;
     color: var(--text-color);
+ 
+}
+.footer-logo-text > li > a {
+      text-decoration: none;
+      text-decoration-color:var(--text-color) ;
+      color:var(--text-color);
 }
 
 .footer-wrapper-one-second{
